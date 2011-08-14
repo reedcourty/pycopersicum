@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
+from getcher import _Getch
+
 if __name__ == '__main__':
-    pass
+    getch = _Getch()
+    char = getch()
+    print(char)
