@@ -1,9 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-from getcher import _Getch
+import sys
+ 
+from PySide.QtGui import QApplication
 
+import gui    
+         
 if __name__ == '__main__':
-    getch = _Getch()
-    char = getch()
-    print(char)
+    app = QApplication(sys.argv)
+    window = gui.MainWindow()
+    window.show()
+    sys.exit(app.exec_())
